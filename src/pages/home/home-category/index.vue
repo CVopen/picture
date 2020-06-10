@@ -1,12 +1,9 @@
 <template>
-  <view>推荐</view>  
+    <view>分类</view>
 </template>
 
 <script>
-export default {
-  
-}
+export default {}
 </script>
 <style lang="scss">
-  
 </style>
