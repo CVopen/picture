@@ -12,7 +12,7 @@
 
         <!-- 列表 开始 -->
         <view class="album_list">
-          <navigator url="/pages/album/index" class="album_item"
+          <navigator :url="`/pages/album/index?id=${item.id}`" class="album_item"
           v-for="item in album"
           :key="item.id"
           >
@@ -57,6 +57,7 @@ export default {
     methods: {
         async getList() {
             const { data: res } = await this.request({
+              //  http://157.122.54.189:9088/image/v1/wallpaper/album https://service.picasso.adesk.com/v1/wallpaper/album
                 url: 'http://157.122.54.189:9088/image/v1/wallpaper/album',
                 data: this.params
             })
@@ -66,6 +67,10 @@ export default {
             }
             if (res.res.album.length === 0) {
               this.hasMore = false
+              uni.showToast({
+                title: '没有更多了',
+                icon: 'none'
+              })
               return
             }
             this.album =  [...this.album, ...res.res.album]
