@@ -51,7 +51,7 @@ export default {
                 { title: '最新' },
                 { title: '专辑' }
             ],
-            current: 0
+            current: 1
         }
     },
     methods: {
@@ -63,7 +63,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 .home_tab {
     .home_tab_title {
         position: relative;

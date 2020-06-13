@@ -6,9 +6,9 @@
       }
     },
     {
-      "path": "pages/demo/index",
+      "path": "pages/imgCategory/index",
       "style": {
-        "navigationBarTitleText": "首页"
+        "navigationBarTitleText": "图片分类"
       }
     },
 
