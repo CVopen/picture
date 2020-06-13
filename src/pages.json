@@ -1,5 +1,10 @@
 {
   "pages": [{
+      "path": "pages/video/index",
+      "style": {
+        "navigationBarTitleText": "视频"
+      }
+    }, {
       "path": "pages/home/index",
       "style": {
         "navigationBarTitleText": "首页"
@@ -11,17 +16,10 @@
         "navigationBarTitleText": "图片分类"
       }
     },
-
     {
       "path": "pages/horizontal/index",
       "style": {
         "navigationBarTitleText": "横屏"
-      }
-    },
-    {
-      "path": "pages/video/index",
-      "style": {
-        "navigationBarTitleText": "视频"
       }
     },
     {
