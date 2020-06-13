@@ -6,11 +6,12 @@
       }
     },
     {
-      "path": "pages/album/index",
+      "path": "pages/demo/index",
       "style": {
-        "navigationBarTitleText": "专辑详情"
+        "navigationBarTitleText": "首页"
       }
     },
+
     {
       "path": "pages/horizontal/index",
       "style": {

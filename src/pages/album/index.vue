@@ -29,7 +29,7 @@
           :key="item.id"
           >
             <go-detail :list="wallpaper" :index="index">
-              <image :src="item.thumb+item.rule.replace('$<Height>', 360)" mode="widthFix"></image>
+              <image :src="item.thumb+item.rule.replace('$<Height>', 360)" mode="aspectFill"></image>
             </go-detail>
             
           </view>
@@ -58,8 +58,8 @@ export default {
         }
     },
     onLoad(options) {
-        // this.id = options.id
-        this.id = '5d5f8e45e7bce75ae7fb8278'
+        this.id = options.id
+        // this.id = '5d5f8e45e7bce75ae7fb8278'
         this.getList()
     },
     // 页面触底 上拉加载下一页
@@ -150,7 +150,7 @@ export default {
     width: 33.3%;
     border: 3rpx solid #fff;
     image{
-
+      height: 160rpx;
     }
   }
 }
